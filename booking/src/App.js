@@ -15,7 +15,7 @@ function App() {
 
   const handleSubmit = event => {
     event.preventDefault();
-    alert('You have submitted the form.')
+    alert('You have submitted the form. Thank you for booking with us!')
     setSubmitting(true);
 
    setTimeout(() => {
@@ -68,7 +68,7 @@ function App() {
         <label> How many hours do you want to book:
           <input name="hours" type="number" min="1" onChange={handleChange}></input>
         </label>
-        <button type="submit" onClick={calcCost()}>Submit</button>
+        <button type="submit">Submit</button>
       </form>
       <br></br>
       <ul>
